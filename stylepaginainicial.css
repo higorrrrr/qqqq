@@ -1,0 +1,117 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, rgba(16, 64, 143, 0.8), rgba(228, 75, 18, 0.8));
+    /* Gradiente com opacidade aumentada */
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #ffffff;
+    border-bottom: 5px solid #e44b12; /* Contorno inferior laranja */
+    padding: 20px;
+    text-align: center;
+    position: block;
+    display: block;
+}
+
+.IMAGEM{
+    max-width: 50px; /* Aumentar o tamanho da logo */
+    height: 60px;
+    justify-content: flex-end;
+    transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+}
+
+.header img:hover {
+    transform: scale(1.1); /* Efeito de zoom na logo */
+}
+
+.header a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e44b12;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #e44b12; /* Borda laranja para o link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animação suave de cor */
+}
+
+.header a:hover {
+    background-color: #e44b12;
+    color: #ffffff;
+}
+
+/* Estilo do vídeo */
+.video-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+video {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 50px;
+    border: 5px solid #10408f; /* Contorno azul */
+    border-radius: 15px; /* Cantos arredondados mais acentuados */
+    background-color: #000; /* Cor de fundo caso o vídeo não carregue */
+    transition: border-color 0.3s ease; /* Animação suave para o contorno */
+}
+
+video:hover {
+    border-color: #e44b12; /* Mudar a cor do contorno ao passar o mouse */
+}
+
+/* Estilo dos editais */
+.editais {
+    text-align: center;
+    margin: 300px;
+}
+
+.editais a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44b12;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: -100%;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave de cor e escala */
+}
+
+.editais a:hover {
+    background-color: #10408f;
+    transform: scale(1.05); /* Efeito de zoom nos botões */
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #ffffff;
+    border-top: 5px solid #e44b12; /* Contorno superior laranja */
+    padding: 50px;
+    text-align: center;
+    margin-top: -450px;
+}
+
+.footer img {
+    max-width: 200px; /* Aumentar o tamanho da logo no rodapé */
+    height: auto;
+    margin: center;
+    transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+}
+
+.footer img:hover {
+    transform: scale(1.1); /* Efeito de zoom na logo */
+}
